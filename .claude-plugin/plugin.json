@@ -1,0 +1,20 @@
+{
+  "name": "memanto-mcp",
+  "version": "0.2.0",
+  "description": "Typed semantic memory for Claude — wraps memanto/Moorcheh as an MCP server with remember/recall/answer tools.",
+  "author": {
+    "name": "Geoff",
+    "url": "https://github.com/geoffsdesk"
+  },
+  "keywords": [
+    "memory",
+    "memanto",
+    "moorcheh",
+    "mcp",
+    "rag",
+    "semantic-memory"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/geoffsdesk/memanto-mcp",
+  "repository": "https://github.com/geoffsdesk/memanto-mcp"
+}
