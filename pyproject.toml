@@ -23,7 +23,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 dependencies = [
-    "mcp>=1.0",
+    "mcp>=1.0,<2",
     "memanto>=0.1",
 ]
 
@@ -44,4 +44,7 @@ Changelog = "https://github.com/geoffsdesk/memanto-mcp/blob/main/CHANGELOG.md"
 memanto-mcp = "memanto_mcp_server:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["server"]
+# Ship server/memanto_mcp_server.py as the top-level module the console
+# script imports (memanto_mcp_server:main), not as a "server" package.
+only-include = ["server/memanto_mcp_server.py"]
+sources = ["server"]
